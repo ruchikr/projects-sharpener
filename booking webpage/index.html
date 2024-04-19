@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking webpage</title>
+    <style>
+        .mydiv{
+       border:5px orange;
+       border-radius:20px;
+       background-color:aliceblue;
+       margin:auto;
+       padding: 10px;
+       width:700px;
+       height: 450px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="mydiv">
+    <form action="#" onsubmit="onsignup(event)">
+        <h1>Book a Call</h1>
+        <h4>book a call and we will call within an hr</h4>
+        <hr>
+        <label> Name</label>
+        <input type="text" name="username"  required/>
+        <br><br>
+        <label> Email</label>
+        <input type="email" name="Email"  required/>
+        <br><br>
+        <label> Password</label>
+        <input type="password" name="password"  required/>
+        <br><br>
+        <button>Get a Call</button>
+    </form>
+    </div>
+</body>
+<script>
+    function onsignup(event){
+        event.preventDefault();
+        console.log(event.target.username.value);
+    }
+
+</script>
+</html>
